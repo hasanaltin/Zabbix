@@ -56,8 +56,7 @@ safe_mkdir zabbix/ssl/certs
 safe_mkdir zabbix/ssl/keys
 safe_mkdir zabbix/ssl/ssl_ca
 
-touch zabbix/odbcinst.ini
-touch zabbix/odbc.ini
+
 
 echo "alpine-5.4-latest" >zabbix/container.version
 

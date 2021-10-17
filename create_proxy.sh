@@ -86,7 +86,10 @@ echo "ZBX_DATASENDERFREQUENCY=1" >>env.list
 echo "ZBX_HOUSEKEEPINGFREQUENCY=1" >>env.list
 
 
+set -e
 
+export CONTAINER_VERSION=`cat zabbix/container.version`
+export CONTAINER_IMAGE=`cat zabbix/container.image`
 if [ -z "$CONTAINER_IMAGE" ]; then
   CONTAINER_IMAGE="zabbix/zabbix-proxy-sqlite3"
 fi

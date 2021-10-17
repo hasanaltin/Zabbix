@@ -9,7 +9,12 @@ function safe_mkdir {
 }
 
 
-printf u"\033[38;5;206m     #That is, \033[38;5;<FG COLOR>m"
+#    .---------- constant part!
+#    vvvv vvvv-- the code from above
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+printf "I ${RED}love${NC} Stack Overflow\n"
+echo "$(tput setaf 1)Red text $(tput setab 7)and white background$(tput sgr 0)"
 
 
 HOSTNAME=`hostname`

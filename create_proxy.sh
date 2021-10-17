@@ -13,7 +13,7 @@ function safe_mkdir {
 #    vvvv vvvv-- the code from above
 Green='\033[0;37m'
 NC='\033[0m' # No Color
-printf "${White}You are here to create your zabbix proxy to connect your zabbix server.${NC}\n"
+printf "${Green}You are here to create your zabbix proxy to connect your zabbix server.${NC}\n"
 
 
 HOSTNAME=`hostname`

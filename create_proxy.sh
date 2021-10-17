@@ -8,11 +8,7 @@ function safe_mkdir {
     fi
 }
 
-#    .---------- constant part!
-#    vvvv vvvv-- the code from above
-GREEN='\033[0;31m'
-NC='\033[0m' # No Color
-printf u"You are there to install a new proxy server for Zabbix Server \u001b[33;1m"
+printf "\u001b[32;1m You are there to install a new proxy server for Zabbix Server"
 
 HOSTNAME=`hostname`
 
@@ -135,7 +131,7 @@ docker-compose up --no-start
 #    vvvv vvvv-- the code from above
 RED='\033[0;31m'
 NC='\033[0m' # No Color
-printf "${RED}Installation is done, your containers are starting.${NC} \n"
+printf "\u001b[32;1m Installation is done, your containers are starting."
 
 docker start zabbix-java-gateway zabbix-proxy zabbix-snmptraps
 
@@ -146,7 +142,7 @@ docker start zabbix-java-gateway zabbix-proxy zabbix-snmptraps
 #    vvvv vvvv-- the code from above
 RED='\033[0;31m'
 NC='\033[0m' # No Color
-printf "${RED}Secure connection beetwen zabbix server and proxy server starts here using pre-shared key.${NC} \n"
+printf "\u001b[32;1m Secure connection beetwen zabbix server and proxy server starts here using pre-shared key."
 
 # Usage: opt_replace <key> <value> <file>
 # Add or replace option in file. Key and value must not contain pipe character.
@@ -196,3 +192,5 @@ opt_replace ZBX_TLSPSKIDENTITY "${PSK_IDENTITY}" env.list
 opt_replace ZBX_TLSPSKFILE "${PSK_FILE}" env.list
 
 #Secure connection beetwen zabbix server and server ends here using pre shared key.
+
+printf "\u001b[32;1m Congratulations installation has been completed. :)"

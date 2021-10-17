@@ -131,19 +131,16 @@ docker-compose up --no-start
 
 #Proxy installation ends here.
 
-
-printf "${FG}Installation is done, your containers are starting.${BG} \n"
-
+#Containers start here.
+printf "${FG}Installation has been done, containers are getting started.${BG} \n"
 docker start zabbix-java-gateway zabbix-proxy zabbix-snmptraps
-
+printf "${FG}Containers are started.${BG} \n"
 #Containers start here.
 
+
 #Secure connection beetwen zabbix server and proxy server starts here using pre-shared key.
-#    .---------- constant part!
-#    vvvv vvvv-- the code from above
-RED='\033[0;31m'
-NC='\033[0m' # No Color
-printf "\u001b[32;1m Secure connection beetwen zabbix server and proxy server starts here using pre-shared key."
+printf "${FG}Secure connection [PSK] settings are getting started.${BG} \n"
+
 
 # Usage: opt_replace <key> <value> <file>
 # Add or replace option in file. Key and value must not contain pipe character.
@@ -194,4 +191,4 @@ opt_replace ZBX_TLSPSKFILE "${PSK_FILE}" env.list
 
 #Secure connection beetwen zabbix server and server ends here using pre shared key.
 
-printf u"\u001b[32;1m Congratulations installation has been completed. :)"
+printf "${FG}Congratulations installation has been completed. :)${BG} \n"

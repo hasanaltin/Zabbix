@@ -131,7 +131,8 @@ docker-compose up --no-start
 
 #Proxy installation ends here.
 
-printf u"\u001b[32;1m Installation is done, your containers are starting."
+
+printf "${FG}Installation is done, your containers are starting.${BG} \n"
 
 docker start zabbix-java-gateway zabbix-proxy zabbix-snmptraps
 

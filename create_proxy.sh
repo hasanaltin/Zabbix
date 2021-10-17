@@ -132,7 +132,11 @@ docker-compose up --no-start
 #Proxy installation ends here.
 
 #Containers start here.
-echo "${RED}Installation is done, your containers are starting...${NC} \n"
+#    .---------- constant part!
+#    vvvv vvvv-- the code from above
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+printf "You are there to install a new proxy server for ${RED}Installation is done, your containers are starting.${NC} \n"
 
 docker start zabbix-java-gateway zabbix-proxy zabbix-snmptraps
 

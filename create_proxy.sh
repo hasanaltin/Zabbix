@@ -9,7 +9,7 @@ function safe_mkdir {
 }
 
 
-echo -e "\e[42mGreen Default \e[42mGreen"
+printf u"\033[38;5;206m     #That is, \033[38;5;<FG COLOR>m"
 
 
 HOSTNAME=`hostname`

@@ -10,7 +10,7 @@ function safe_mkdir {
 
 printf u"\u001b[42;1m You are there to install a new proxy server for Zabbix Server."
 printf u"\u001b[42;1m You are there to install a new proxy server for Zabbix Server."
-print u"\u001b[1m\u001b[31m You are there to install a new proxy server for Zabbix Server. \u001b[0m"
+printf u"\u001b[1m\u001b[31m You are there to install a new proxy server for Zabbix Server. \u001b[0m"
 
 
 HOSTNAME=`hostname`

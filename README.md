@@ -1,2 +1,2 @@
 # zabbix
-This repository contains a number of useful Zabbix enhancements and templates.
+This repository contains a bunch of useful Zabbix enhancements and templates.

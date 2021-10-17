@@ -10,8 +10,7 @@ function safe_mkdir {
 
 printf u"\u001b[42;1m You are there to install a new proxy server for Zabbix Server."
 
-echo -e "I ${RED}love${NC} Stack Overflow"
-
+echo -e "Default \e[42mGreen"
 
 
 HOSTNAME=`hostname`

@@ -9,7 +9,7 @@ function safe_mkdir {
 }
 
 
-echo -e "Default \e[42mGreen"
+echo -e "\e[42mGreen Default \e[42mGreen"
 
 
 HOSTNAME=`hostname`

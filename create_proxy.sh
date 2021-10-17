@@ -11,8 +11,8 @@ function safe_mkdir {
 
 #    .---------- constant part!
 #    vvvv vvvv-- the code from above
-Green='\033[0;32m'
-NC='\033[0m' # No Color
+Green='\033[0;37m'
+NC='\033[42m' # No Color
 printf "I ${Green}love${NC} Stack Overflow\n"
 
 

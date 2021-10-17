@@ -12,8 +12,9 @@ function safe_mkdir {
 #    .---------- constant part!
 #    vvvv vvvv-- the code from above
 Green='\033[0;37m'
-NC='\033[42m' # No Color
+White='\033[42m' # No Color
 printf "I ${Green}love${NC} Stack Overflow\n"
+printf "I ${White}love${White} Stack Overflow\n"
 
 
 HOSTNAME=`hostname`

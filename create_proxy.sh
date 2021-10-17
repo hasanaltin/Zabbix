@@ -59,6 +59,7 @@ safe_mkdir zabbix/ssl/ssl_ca
 touch zabbix/odbcinst.ini
 touch zabbix/odbc.ini
 
+echo "3.12" >zabbix/container.version
 
 echo "ZBX_HOSTNAME=${HOSTNAME}" >>env.list
 if [ -z "$PASSIVE_PROXY" ]; then

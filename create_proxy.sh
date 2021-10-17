@@ -12,7 +12,7 @@ function safe_mkdir {
 #    vvvv vvvv-- the code from above
 GREEN='\033[0;31m'
 NC='\033[0m' # No Color
-printf "You are there to install a new proxy server for Zabbix Server \u001b[33;1m"
+printf u"You are there to install a new proxy server for Zabbix Server \u001b[33;1m"
 
 HOSTNAME=`hostname`
 

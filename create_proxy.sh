@@ -86,8 +86,6 @@ echo "ZBX_DATASENDERFREQUENCY=1" >>env.list
 echo "ZBX_HOUSEKEEPINGFREQUENCY=1" >>env.list
 
 
-set -e
-
 
 if [ -z "$CONTAINER_IMAGE" ]; then
   CONTAINER_IMAGE="zabbix/zabbix-proxy-sqlite3"

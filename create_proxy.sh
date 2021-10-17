@@ -10,9 +10,9 @@ function safe_mkdir {
 
 #    .---------- constant part!
 #    vvvv vvvv-- the code from above
-RED='\033[0;36m'
-NC='\033[46m' # No Color
-printf "I ${RED}You are here to create your zabbix proxy to connect your zabbix server.${NC} Stack Overflow\n"
+FG='\033[0;36m' # 36_Cyan
+BG='\033[0m' # No Color
+printf "${FG}You are here to create your zabbix proxy to connect your zabbix server.${BG} Stack Overflow\n"
 
 
 

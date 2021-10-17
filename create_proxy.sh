@@ -142,12 +142,12 @@ docker start zabbix-java-gateway zabbix-proxy zabbix-snmptraps
 
 #Containers start here.
 
-#Secure connection beetwen zabbix server and proxy server starts here using pre-generated key.
+#Secure connection beetwen zabbix server and proxy server starts here using pre-shared key.
 #    .---------- constant part!
 #    vvvv vvvv-- the code from above
 RED='\033[0;31m'
 NC='\033[0m' # No Color
-printf "${RED}Secure connection beetwen zabbix server and proxy server starts here using pre-generated key.${NC} \n"
+printf "${RED}Secure connection beetwen zabbix server and proxy server starts here using pre-shared key.${NC} \n"
 
 # Usage: opt_replace <key> <value> <file>
 # Add or replace option in file. Key and value must not contain pipe character.

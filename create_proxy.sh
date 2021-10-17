@@ -9,8 +9,9 @@ function safe_mkdir {
 }
 
 printf u"\u001b[42;1m You are there to install a new proxy server for Zabbix Server."
-printf u"\u001b[42;1m You are there to install a new proxy server for Zabbix Server."
-printf u"\u001b[1m\u001b[31m You are there to install a new proxy server for Zabbix Server. \u001b[0m"
+
+echo -e "I ${RED}love${NC} Stack Overflow"
+
 
 
 HOSTNAME=`hostname`

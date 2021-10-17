@@ -55,7 +55,8 @@ safe_mkdir zabbix/ssl
 safe_mkdir zabbix/ssl/certs
 safe_mkdir zabbix/ssl/keys
 safe_mkdir zabbix/ssl/ssl_ca
-
+touch zabbix/odbcinst.ini
+touch zabbix/odbc.ini
 
 
 echo "alpine-5.4-latest" >zabbix/container.version
@@ -87,8 +88,7 @@ echo "ZBX_HOUSEKEEPINGFREQUENCY=1" >>env.list
 
 set -e
 
-export CONTAINER_VERSION=`cat zabbix/container.version`
-export CONTAINER_IMAGE=`cat zabbix/container.image`
+
 if [ -z "$CONTAINER_IMAGE" ]; then
   CONTAINER_IMAGE="zabbix/zabbix-proxy-sqlite3"
 fi

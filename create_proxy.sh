@@ -13,10 +13,7 @@ FG='\033[0;36m' # 36_Cyan
 BG='\033[0m' # No Color
 printf "${FG}You are here to create your zabbix proxy to connect your zabbix server.${BG} \n"
 
-
-
 HOSTNAME=`hostname`
-
 
 read -p "Would you like to use the hostname '${HOSTNAME}' as proxy hostname (Y/n)?" -n 1 -r
 echo

@@ -56,7 +56,7 @@ touch zabbix/odbcinst.ini
 touch zabbix/odbc.ini
 
 
-echo "alpine-latest" >zabbix/container.version
+echo "alpine-6.2" >zabbix/container.version
 
 echo "ZBX_HOSTNAME=${HOSTNAME}" >>env.list
 if [ -z "$PASSIVE_PROXY" ]; then

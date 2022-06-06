@@ -29,7 +29,7 @@ services:
 
   zabbix-java-gateway:
     restart: unless-stopped
-    image: zabbix/zabbix-java-gateway:ubuntu-6.0-latest
+    image: zabbix/zabbix-java-gateway:alpine-5.4-latest
     container_name: zabbix-java-gateway
     networks:
       - 68Aksaray    
@@ -40,7 +40,7 @@ services:
 
   zabbix-snmptraps:
     restart: unless-stopped
-    image: zabbix/zabbix-snmptraps:ubuntu-6.0-latest
+    image: zabbix/zabbix-snmptraps:alpine-5.4-latest
     container_name: zabbix-snmptraps
     networks:
       - 68Aksaray
